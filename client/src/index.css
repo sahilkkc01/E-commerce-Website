@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  box-sizing:border-box;
+  margin: 0;
+}
+
+.App{
+  max-width: 1230px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: 0 0 35px #c06c6c;
+} 
+
+a{
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+button{
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* import All css in one place so can be applied everywhere */
+
+@import url('./components/headers/header.css');
