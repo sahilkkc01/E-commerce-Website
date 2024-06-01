@@ -1,6 +1,6 @@
 *{
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -9,8 +9,8 @@
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
-  box-shadow: 0 0 35px #c06c6c;
-} 
+  box-shadow: 0 0 35px #eee;
+}
 
 a{
   text-decoration: none;
@@ -22,11 +22,13 @@ ul li{
 
 button{
   border: none;
-  outline: none;
-  background: transparent;
+  outline:none;
+  background:transparent;
   cursor: pointer;
 }
 
-/* import All css in one place so can be applied everywhere */
+@import url("./components/headers/header.css");
 
-@import url('./components/headers/header.css');
+@import url("./components/mainpages/products/products.css");
+
+@import url("./components/mainpages/utils/DetailProducts/detailProduct.css");

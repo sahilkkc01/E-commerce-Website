@@ -3,35 +3,32 @@ header{
     width: 100%;
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ddd;
 }
 
 header.logo{
-    flex: 1;
+    flex:1;
+
 }
 
 header a{
     text-transform: uppercase;
     color: black;
 }
-
 header ul li{
     display: inline-block;
     opacity: 0.7;
     padding: 0 20px;
 }
-
 header ul li:hover{
     opacity: 1;
 }
-
 .menu{
     display: none;
 }
-
 .cart-icon{
     position: relative;
 }
@@ -39,8 +36,8 @@ header ul li:hover{
     background: crimson;
     border-radius: 20px;
     color: white;
-    position:absolute;
-    top: -10px;
+    position: absolute;
+    top:-10px;
     right: -10px;
     padding: 5px 7px;
     font-size: 10px;

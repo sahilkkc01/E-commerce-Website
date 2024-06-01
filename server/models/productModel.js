@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const productSchema = new mongoose.Schema({
     product_id:{
@@ -19,12 +19,11 @@ const productSchema = new mongoose.Schema({
     },
     description:{
         type:String,
-        required:true,
-
+        required:true
     },
     content:{
         type:String,
-        required:true,
+        required:true
     },
     images:{
         type:Object,

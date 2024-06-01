@@ -1,16 +1,18 @@
-const userCtrl = require('../controllers/userCtrls');
-const auth = require('../middleware/auth');
+const userCtrl = require('../controllers/userCtrl')
+const auth = require('../middleware/auth')
 
+const router = require('express').Router()
 
-const router = require('express').Router();
 
 router.post('/register',userCtrl.register)
+
 router.post('/login',userCtrl.login)
+
 router.get('/logout',userCtrl.logout)
-router.post('/refresh_token',userCtrl.refreshtoken)
 
-//First use auth middleware for authenctication then go to getUser function
-router.get('/info',auth,userCtrl.getUser);
+router.get('/refresh_token',userCtrl.refreshtoken)
 
+router.get('/infor',auth,userCtrl.getUser)
+ 
 
-module.exports= router;
+module.exports = router

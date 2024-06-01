@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router()
 const productCtrl = require('../controllers/productCtrl')
 
 router.route('/products')
@@ -7,8 +7,7 @@ router.route('/products')
 
 
 router.route('/products/:id')
-.delete(productCtrl.deleteProducts)
-.put(productCtrl.updateProducts)
-
+.delete(productCtrl.deleteProduct)
+.put(productCtrl.updateProduct)
 
 module.exports = router

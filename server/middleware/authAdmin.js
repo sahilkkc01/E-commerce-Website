@@ -1,19 +1,18 @@
 const Users = require('../models/userModel')
 
-const authAdmin = async(req,res,next)=>{
+const authAdmin = async(req,res,next) => {
     try{
         const user = await Users.findOne({
             _id : req.user.id
         })
 
-        if(user.role===0){
-            return res.status(400).json({msg:"Admin resources Access Denied"})
-        }
-        //pass control to next middleware
-        next()
+        if(user.role === 0)
+        return res.status(400).json({msg:"Admin Resources Access Denied"})
 
-    }catch(err){
-        return res.status(500).json({msg:err.message});
+        next()
+    }
+    catch(err){
+        return res.status(500).json({msg:err.message})
     }
 }
 

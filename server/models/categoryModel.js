@@ -8,9 +8,7 @@ const categorySchema = new mongoose.Schema({
         unique:true
     }
 },{
-    //we use timestamps to track when(time) the thing was created
     timestamps:true
-}) 
-         
-                            //Category is model of mongoose
-module.exports = mongoose.model('Category',categorySchema)
+})
+
+module.exports = mongoose.model("Category",categorySchema)
